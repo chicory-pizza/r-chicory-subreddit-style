@@ -2,58 +2,65 @@
 
 /* Addon: Content Overlap Header */
 #header {
-    background-image: none;
-    box-shadow: none;
-    background-color: transparent;
-    height: 232px;
+	background-image: none;
+	box-shadow: none;
+	background-color: transparent;
+	height: 232px;
 }
 
-    #header .tabmenu:before {
-        display: none;
-    }
+#header .tabmenu:before {
+	display: none;
+}
 
 body {
-    background-color: #fff;
-    background-image: url(%%headerimg2%%), linear-gradient(#FEFAF9, #FEFAF9), linear-gradient(#FEFAF9, rgba(254, 250, 249, 0)), url(%%bg%%);
-    background-repeat: no-repeat;
-    background-position: 50% 0, 0 0, 0 280px, 50% 50%;
-    background-size: 912px 280px, 100% 280px, 100% 200px, cover;
-    background-attachment: scroll, scroll, scroll, fixed;
-    color: #000;
+	background-color: #fff;
+	background-image: url(%%headerimg2%%), linear-gradient(#fefaf9, #fefaf9),
+		linear-gradient(#fefaf9, rgba(254, 250, 249, 0)), url(%%bg%%);
+	background-repeat: no-repeat;
+	background-position: 50% 0, 0 0, 0 280px, 50% 50%;
+	background-size: 912px 280px, 100% 280px, 100% 200px, cover;
+	background-attachment: scroll, scroll, scroll, fixed;
+	color: #000;
 }
 
-#header .tabmenu li a, #header .tabmenu li.selected a {
-    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+#header .tabmenu li a,
+#header .tabmenu li.selected a {
+	text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 }
 /* End Addon */
 
-body[class]>.content, body.listing-page[class]>.content {margin-top:0;}
+body[class] > .content,
+body.listing-page[class] > .content {
+	margin-top: 0;
+}
 
 /* Addon: Custom CSS Text */
 div.titlebox span.number:after {
-    content: " wielders";
+	content: ' wielders';
 }
 
 .titlebox .users-online .number:after {
-    content: " painting";
+	content: ' painting';
 }
 /* End Addon */
 
 /* Addon: Custom Snoo */
-#header-img.default-header, #header-img {
-    background: url(%%snoo%%) no-repeat 0 0;
-    background-size: cover;
-    margin-top: 87px;
+#header-img.default-header,
+#header-img {
+	background: url(%%snoo%%) no-repeat 0 0;
+	background-size: cover;
+	margin-top: 87px;
 }
 
-#header-img.default-header:hover, #header-img:hover {
-    background-position: 0 0;
+#header-img.default-header:hover,
+#header-img:hover {
+	background-position: 0 0;
 }
 /* End Addon */
 
 /* Addon: Remove Sidebar Image */
 .side::before {
-    content: none;
+	content: none;
 }
 
 #search,
@@ -61,74 +68,140 @@ div.titlebox span.number:after {
 .side .titlebox h1.redditname,
 .subscribers,
 .titlebox .fancy-toggle-button {
-    margin-top: -80px;
+	margin-top: -80px;
 }
 
 .side {
-    margin-top: 202px;
+	margin-top: 202px;
 }
 /* End Addon */
 
 /* Addon: Custom Subreddit Title */
-#header-bottom-left {position:static;padding-left:16px;}
+#header-bottom-left {
+	position: static;
+	padding-left: 16px;
+}
 
 #header .pagename a {
-    height: 176px;
-    width: 406px;
-    background: url(%%logo-anim%%) no-repeat 0 0;
-    animation: chicory_logo .9s steps(1) infinite;
-    text-indent: -9999px;
-    text-shadow: none;
-    transition: none;
+	height: 176px;
+	width: 406px;
+	background: url(%%logo-anim%%) no-repeat 0 0;
+	animation: chicory_logo 0.9s steps(1) infinite;
+	text-indent: -9999px;
+	text-shadow: none;
+	transition: none;
 
-    position: absolute;
-    left: 50%;
-    top: 30px;
-    margin-left: -203px;
+	position: absolute;
+	left: 50%;
+	top: 30px;
+	margin-left: -203px;
 }
 
 .side .titlebox h1.redditname a {
-    font-size: 0;
+	font-size: 0;
 }
 
 .side .titlebox h1.redditname a:before {
-    content: "Chicory: A Colorful Tale";
-    font-size: 19px;
+	content: 'Chicory: A Colorful Tale';
+	font-size: 19px;
 }
 
 @keyframes chicory_logo {
-    0% {background-position: 0 0;}
-    33% {background-position: 0 -186px;}
-    66% {background-position: 0 -372px;}
+	0% {
+		background-position: 0 0;
+	}
+	33% {
+		background-position: 0 -186px;
+	}
+	66% {
+		background-position: 0 -372px;
+	}
 }
 /* End Addon */
 
-#header .tabmenu li a {color:rgba(0,0,0,.4);}
-#header .tabmenu li a:hover {color:#000;}
-#header .tabmenu li.selected a {color:#000;}
-#header .tabmenu li a, #header .tabmenu li.selected a {text-shadow:none;}
-
-body.listing-page > .content,body.other-discussions-page > .content,.comments-page .link,.commentarea > .sitetable > .comment,#bottom-comments:not(.child) > .sitetable > .comment,#images,.sponsorshipbox,.stylesheet-customize-container .pretty-form,.side .sidecontentbox,.account-activity-box,.side .titlebox,#previoussearch #moresearchinfo,#ad-frame,#ad_main,.wiki-page .wiki-page-content,.linefield,.submit-page .roundfield,.login-form-side,#ad_main_top,.search-result-subreddit,.search-result-listing + .search-result-listing .contents,[class] .searchfacets, body.search-page > .content,
-.comments-page .side .linkinfo, .other-discussions-page .side .linkinfo
-    {background:#fefaf9;border-radius:0;box-shadow:0 0 0 4px #000;}
-#noresults, .commentarea>.usertext, .panestack-title, .commentarea .menuarea {background-color:#fefaf9;}
-.panestack-title {margin-top:8px;padding-top:8px;}
-.commentarea .menuarea {margin-bottom:8px;padding-bottom:8px;}
-
-.submit-page[class] .content {margin-top:110px;}
-
-.search-page #search {position:static;top:0;left:0;transform:none;margin:0 0 10px;}
-
-#sr-header-area {background:rgba(0,0,0,.3);}
-.bottom {display:none;}
-
-.footer{border-radius:0;background:none;margin-top:0;padding:0;}
-.footer-parent{
-    height:auto;padding:900px 0 24px;margin:0 auto;
-
-    background-image: url(%%footer%%), linear-gradient(#fff, #fff), linear-gradient(rgba(255,255,255,0), #fff);
-    background-position: 50% 300px, 0 280px, 0 0;
-    background-size: 1217px 600px, 100% 100%, 100% 280px;
+#header .tabmenu li a {
+	color: rgba(0, 0, 0, 0.4);
 }
-.flat-vert.title,.bottommenu a{color:rgba(0,0,0,0.7)}
-.bottommenu{color:rgba(0,0,0,0.42)}
+
+#header .tabmenu li a:hover {
+	color: #000;
+}
+
+#header .tabmenu li.selected a {
+	color: #000;
+}
+
+#header .tabmenu li a,
+#header .tabmenu li.selected a {
+	text-shadow: none;
+}
+
+body.listing-page > .content,
+body.other-discussions-page > .content,
+.comments-page .link,
+.commentarea > .sitetable > .comment,
+#bottom-comments:not(.child) > .sitetable > .comment,
+#images,
+.sponsorshipbox,
+.stylesheet-customize-container .pretty-form,
+.side .sidecontentbox,
+.account-activity-box,
+.side .titlebox,
+#previoussearch #moresearchinfo,
+#ad-frame,
+#ad_main,
+.wiki-page .wiki-page-content,
+.linefield,
+.submit-page .roundfield,
+.login-form-side,
+#ad_main_top,
+.search-result-subreddit,
+.search-result-listing + .search-result-listing .contents,
+[class] .searchfacets,
+body.search-page > .content,
+.comments-page .side .linkinfo,
+.other-discussions-page .side .linkinfo {
+	background: #fefaf9;
+	border-radius: 0;
+	box-shadow: 0 0 0 4px #000;
+}
+
+#noresults,
+.commentarea > .usertext,
+.panestack-title,
+.commentarea .menuarea {
+	background-color: #fefaf9;
+}
+
+.panestack-title {
+	margin-top: 8px;
+	padding-top: 8px;
+}
+
+.commentarea .menuarea {
+	margin-bottom: 8px;
+	padding-bottom: 8px;
+}
+
+.submit-page[class] .content {
+	margin-top: 110px;
+}
+
+.search-page #search {
+	position: static;
+	top: 0;
+	left: 0;
+	transform: none;
+	margin: 0 0 10px;
+}
+
+#sr-header-area {
+	background: rgba(0, 0, 0, 0.3);
+}
+
+/* Hide 'created by xyz' and 'a community for 2 years' */
+.bottom {
+	display: none;
+}
+
+@import './footer.css';

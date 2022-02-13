@@ -1,0 +1,27 @@
+/* Bottom footer links, and a nice image of Pizza */
+.footer {
+	border-radius: 0;
+	background: none;
+	margin-top: 0;
+	padding: 0;
+}
+
+.footer-parent {
+	height: auto;
+	padding: 900px 0 24px;
+	margin: 0 auto;
+
+	background-image: url(%%footer%%), linear-gradient(#fff, #fff),
+		linear-gradient(rgba(255, 255, 255, 0), #fff);
+	background-position: 50% 300px, 0 280px, 0 0;
+	background-size: 1217px 600px, 100% 100%, 100% 280px;
+}
+
+.flat-vert.title,
+.bottommenu a {
+	color: rgba(0, 0, 0, 0.7);
+}
+
+.bottommenu {
+	color: rgba(0, 0, 0, 0.42);
+}
