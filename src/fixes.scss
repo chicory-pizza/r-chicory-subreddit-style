@@ -1,0 +1,7 @@
+// Misc fixes for Naut
+
+// Fix position of top-right Join button
+.titlebox .fancy-toggle-button {
+	margin-left: 0;
+	right: 16px + 16;
+}

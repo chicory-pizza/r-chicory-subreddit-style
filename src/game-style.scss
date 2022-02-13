@@ -1,0 +1,47 @@
+// Tweaks to make the subreddit look more like the game
+
+// Set custom content background color
+// Remove border-radius and shadows
+body.listing-page > .content,
+body.other-discussions-page > .content,
+.comments-page .link,
+.commentarea > .sitetable > .comment,
+#bottom-comments:not(.child) > .sitetable > .comment,
+#images,
+.sponsorshipbox,
+.stylesheet-customize-container .pretty-form,
+.side .sidecontentbox,
+.account-activity-box,
+.side .titlebox,
+#previoussearch #moresearchinfo,
+#ad-frame,
+#ad_main,
+.wiki-page .wiki-page-content,
+.linefield,
+.submit-page .roundfield,
+.login-form-side,
+#ad_main_top,
+.search-result-subreddit,
+.search-result-listing + .search-result-listing .contents,
+[class] .searchfacets,
+body.search-page > .content,
+.comments-page .side .linkinfo,
+.other-discussions-page .side .linkinfo,
+.side .titlebox h1.redditname:before {
+	background: rgba(#fefaf9, 0.99);
+	border-radius: 0;
+	box-shadow: 0 0 0 4px #000;
+}
+
+.create .morelink,
+.side:after {
+	background: rgba(#fefaf9, 0.99);
+}
+
+.c-btn-primary,
+.wiki-page .wiki-page-content .wiki_button,
+body .btn,
+body button,
+.morelink {
+	box-shadow: none;
+}

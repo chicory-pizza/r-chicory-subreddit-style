@@ -136,35 +136,7 @@ div.titlebox span.number:after {
 	text-shadow: none;
 }
 
-body.listing-page > .content,
-body.other-discussions-page > .content,
-.comments-page .link,
-.commentarea > .sitetable > .comment,
-#bottom-comments:not(.child) > .sitetable > .comment,
-#images,
-.sponsorshipbox,
-.stylesheet-customize-container .pretty-form,
-.side .sidecontentbox,
-.account-activity-box,
-.side .titlebox,
-#previoussearch #moresearchinfo,
-#ad-frame,
-#ad_main,
-.wiki-page .wiki-page-content,
-.linefield,
-.submit-page .roundfield,
-.login-form-side,
-#ad_main_top,
-.search-result-subreddit,
-.search-result-listing + .search-result-listing .contents,
-[class] .searchfacets,
-body.search-page > .content,
-.comments-page .side .linkinfo,
-.other-discussions-page .side .linkinfo {
-	background: #fefaf9;
-	border-radius: 0;
-	box-shadow: 0 0 0 4px #000;
-}
+@import './game-style';
 
 #noresults,
 .commentarea > .usertext,
@@ -203,6 +175,8 @@ body.search-page > .content,
 .bottom {
 	display: none;
 }
+
+@import './fixes';
 
 @import './colorful-hover';
 @import './footer';
