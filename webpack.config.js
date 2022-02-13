@@ -6,7 +6,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
 	entry: {
-		app: './src/main.js',
+		out: './src/main.js',
 	},
 	output: {
 		path: path.resolve(__dirname, 'out/'),
@@ -24,6 +24,7 @@ module.exports = {
 					{
 						loader: 'css-loader',
 						options: {
+							importLoaders: 1,
 							url: false,
 						},
 					},

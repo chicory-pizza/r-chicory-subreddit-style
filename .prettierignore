@@ -1,5 +1,7 @@
 package.json
 package-lock.json
 
-out/app.css
-out/app.js
+src/naut_src.css
+
+out/out.css
+out/out.js

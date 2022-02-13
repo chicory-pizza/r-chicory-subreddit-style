@@ -17,7 +17,7 @@
     "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --mode development --progress",
     "prettier": "prettier .",
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --mode production",
-    "watch": "npm run development --watch"
+    "watch": "npm run development -- --watch"
   },
   "devDependencies": {
     "autoprefixer": "10.4.2",
