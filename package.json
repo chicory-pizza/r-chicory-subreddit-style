@@ -1,0 +1,18 @@
+{
+  "description": "Subreddit stylesheet for r/chicory",
+  "bugs": {
+    "email": "ngyikp@gmail.com"
+  },
+  "author": {
+    "name": "Ng Yik Phang (ngyikp)",
+    "email": "ngyikp@gmail.com",
+    "url": "https://ngyikp.com"
+  },
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "node": ">=14"
+  },
+  "dependencies": {
+  }
+}
