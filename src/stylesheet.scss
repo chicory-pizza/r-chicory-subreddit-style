@@ -15,7 +15,7 @@
 body {
 	background-color: #fff;
 	background-image: url(%%headerimg2%%), linear-gradient(#fefaf9, #fefaf9),
-		linear-gradient(#fefaf9, rgba(254, 250, 249, 0)), url(%%bg%%);
+		linear-gradient(#fefaf9, rgba(#fefaf9, 0%)), url(%%bg%%);
 	background-repeat: no-repeat;
 	background-position: 50% 0, 0 0, 0 280px, 50% 50%;
 	background-size: 912px 280px, 100% 280px, 100% 200px, cover;
@@ -204,4 +204,5 @@ body.search-page > .content,
 	display: none;
 }
 
+@import './colorful-hover';
 @import './footer';

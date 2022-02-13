@@ -1,0 +1,35 @@
+@use 'sass:color';
+
+// Luncheon colors :)
+$color1: #33f5e4;
+$color2: #e0ff77;
+$color3: #ffb8a9;
+$color4: #c5aeff;
+
+.listing-page .link,
+.commentarea > .sitetable > .comment {
+	transition: background-color 0.2s ease;
+
+	&:hover {
+		transition: none;
+
+		// There is .clearleft between each links
+		$fade: 0.2;
+
+		&:nth-of-type(8n + 1) {
+			background: color.scale($color1, $lightness: 85%);
+		}
+
+		&:nth-of-type(8n + 3) {
+			background: color.scale($color2, $lightness: 85%);
+		}
+
+		&:nth-of-type(8n + 5) {
+			background: color.scale($color3, $lightness: 85%);
+		}
+
+		&:nth-of-type(8n + 7) {
+			background: color.scale($color4, $lightness: 85%);
+		}
+	}
+}
