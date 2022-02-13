@@ -5,20 +5,7 @@ module.exports = (ctx) => {
 	return {
 		plugins: {
 			autoprefixer: {},
-			cssnano:
-				ctx.env === 'production'
-					? {
-							preset: [
-								'default',
-								{
-									discardComments: {
-										remove: (comment) =>
-											!comment.includes('Find out more on /r/Naut'),
-									},
-								},
-							],
-					  }
-					: false,
+			cssnano: ctx.env === 'production' ? {} : false,
 		},
 	};
 };

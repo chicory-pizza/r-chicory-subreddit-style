@@ -1,1 +1,1 @@
-import './stylesheet.css';
+import './stylesheet.scss';

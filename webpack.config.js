@@ -18,18 +18,21 @@ module.exports = {
 				test: /\.js$/,
 			},
 			{
-				test: /\.css$/,
+				test: /\.(css|scss)$/,
 				use: [
 					MiniCssExtractPlugin.loader,
 					{
 						loader: 'css-loader',
 						options: {
-							importLoaders: 1,
 							url: false,
 						},
 					},
 					'postcss-loader',
 				],
+			},
+			{
+				test: /\.scss$/,
+				use: ['sass-loader'],
 			},
 		],
 	},
