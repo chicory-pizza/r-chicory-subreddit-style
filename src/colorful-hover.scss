@@ -14,8 +14,6 @@ $color4: #c5aeff;
 		transition: none;
 
 		// There is .clearleft between each links
-		$fade: 0.2;
-
 		&:nth-of-type(8n + 1) {
 			background: color.scale($color1, $lightness: 85%);
 		}
